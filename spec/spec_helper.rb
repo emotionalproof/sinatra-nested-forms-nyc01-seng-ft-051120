@@ -7,6 +7,7 @@ RSpec.configure do |config|
   config.include Capybara::DSL
   config.include Rack::Test::Methods
   config.order = 'default'
+  config.full_backtrace = false
 end
 
 def app
